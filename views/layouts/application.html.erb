@@ -12,14 +12,13 @@
     <link rel="icon"          href="favicon.ico" type="image/vnd.microsoft.icon" />
     <%= manage_ansuz_stylesheets %>
     <%= manage_ansuz_javascripts %>
-	  <%= theme_stylesheet_link_tag 'ansuz_theme_my_game_robot', 'base' -%>
+	  <%= theme_stylesheet_link_tag 'ansuz_theme_slick_top_insight', 'base' -%>
   </head>
   <body>
     <div class='wrapper'>
       <%= render :partial => "page/top_nav" -%>
       <div id="logo">
-			  <h1><a href="/">MyGameRobots</a></h1>
-			  <h2>Win without effort</h2>
+        <h1><a href="/"><span>Insight</span></a></h1>
 		  </div>
       <%= render :partial => "page/breadcrumb" if (@page && (@page != @root)) -%>
       <%= @content_for_layout -%>
@@ -27,8 +26,8 @@
       <div id='no-show'>
         <%= yield :sidebar -%>
       </div>
-      <%= render :partial => "page/footer" -%>
     </div>
+    <%= render :partial => "page/footer" -%>
     <script type='text/javascript'>
       jQuery(document).ready(function() { 
         // setup scrolling with this one JavaScript call 

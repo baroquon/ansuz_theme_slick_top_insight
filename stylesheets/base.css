@@ -1,12 +1,36 @@
 :link,:visited { text-decoration:none } :focus,:active { outline: 0 } ul,ol { list-style:none } h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; } ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input { margin:0; padding:0 } a img,:link img,:visited img, fieldset { border:none } address { font-style:normal }
-body { font: .8em "Trebuchet MS", Verdana, Helvetica, sans-serif; color: #666;  background: #F7FCFF url(/themes/ansuz_theme_my_game_robot/images/bg.gif) repeat-x; }
-a { color: #AF1515; cursor: pointer; }
-a:hover { color: #7D1919; }
-h1 { font-size: 3em; clear: both; margin: 0 0 5px; }
-h2 { font: normal 1.6em Arial; color: #3D3C3B; margin: 0 0 15px; }
-h2#slogan { font-size: 1.3em; color: #808080; }
-p  { margin: 0 0 15px; line-height: 1.7em; }
-.clear { clear: both; }
+body {
+  font: .8em "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  color: #666; 
+  background: #FFF url(/themes/ansuz_theme_slick_top_insight/images/bg.png) repeat-x; }
+a {
+  color: #AF1515;
+  cursor: pointer;
+ }
+a:hover {
+  color: #7D1919;
+ }
+h1 {
+  font-size: 3em;
+  clear: both;
+  margin: 0 0 5px;
+ }
+h2 {
+  font: normal 1.6em Arial;
+  color: #3D3C3B;
+  margin: 0 0 15px;
+ }
+h2#slogan {
+  font-size: 1.3em;
+  color: #808080;
+ }
+p  {
+  margin: 0 0 15px;
+  line-height: 1.7em;
+ }
+.clear {
+  clear: both;
+ }
 .wrapper {
   margin: 0 auto;
   width: 900px; 
@@ -15,12 +39,17 @@ p  { margin: 0 0 15px; line-height: 1.7em; }
 #breadcrumb{
   position: absolute;
 }
-#top-nav { padding: 0 0 8px; margin: 0 0 25px; height: 20px;  }
+#top-nav {
+  padding: 0 0 8px;
+  margin: 30px 0 25px;
+  height: 20px; 
+  float:right;
+ }
 	#top-nav li { display: inline; }
 	#top-nav li a { float: left; width: 86px; text-align: center; margin: 0 2px 0 0; font-weight: bold; font-size: .8em; padding: 16px 0 21px; color: #ccc; }
 		#top-nav li.active a {
 		  color: #AF1515;
-		  background: url(/themes/ansuz_theme_my_game_robot/images/menu.gif) no-repeat center bottom;
+		  background: url(/themes/ansuz_theme_slick_top_insight/images/menu.png) no-repeat center bottom;
 		  }
 		  #top-nav li.active a:hover {
 		    color: #AF1515;
@@ -31,13 +60,23 @@ p  { margin: 0 0 15px; line-height: 1.7em; }
 	  #navigation h3{
         display:none;
       }
-#logo { 
-      background:transparent url(/themes/ansuz_theme_my_game_robot/images/logo.png) no-repeat scroll left top;
+#logo  h1{
+  margin:0;
+  } 
+#logo  h1 a{ 
+      background:transparent url(/themes/ansuz_theme_slick_top_insight/images/logo.png) no-repeat scroll left top;
       float:left;
-      margin:40px 0 0;
-      width:330px;
-      padding-top:245px;
+      display: block;
+      margin:0;
+      width:329px;
+      height:68px;
+      padding-top:0;
+      position:absolute;
+      top:5px;
         }
+#logo  h1 a span{
+  display:none;
+} 
 .testimonial{ 
    color: #33617F;
     float: right;
@@ -81,13 +120,13 @@ p  { margin: 0 0 15px; line-height: 1.7em; }
  }
 	#side h3 { color: #ccc; margin: 0 0 6px 5px; height: 16px; }
 
-.boxtop { background: url(/themes/ansuz_theme_my_game_robot/images/box.gif) no-repeat top;
+.boxtop { background: url(/themes/ansuz_theme_slick_top_insight/images/box.gif) no-repeat top;
     padding: 2px 0;
     line-height: 0; 
    }
 .box { padding: 3px 6px; background: #363636; }
 .boxbottom { 
-    background: url(/themes/ansuz_theme_my_game_robot/images/box.gif) no-repeat bottom;
+    background: url(/themes/ansuz_theme_slick_top_insight/images/box.gif) no-repeat bottom;
     padding: 2px 0;
     line-height: 0;
  }
@@ -114,8 +153,22 @@ p  { margin: 0 0 15px; line-height: 1.7em; }
 #no-show{
   display: none;
 }
-#footer { background: url(/themes/ansuz_theme_my_game_robot/images/dot.gif) repeat-x; padding: 15px 0 10px; clear: both; font-size: .9em; line-height: 1.7em;  }
-#promo { clear: both; border-top: 3px solid #6E6E6E; background: #505050 url(/themes/ansuz_theme_my_game_robot/images/footer.gif) no-repeat right top; color: #ccc; padding: 30px 0 0 0; }
+#footer {
+  background: #222;
+  padding: 15px 0 10px;
+  clear: both;
+  font-size: .9em;
+  line-height: 1.7em; 
+  color: #bbb;
+  text-align:center;
+ }
+#footer h2{
+  color: #ccc;
+}
+#footer .contact-container{
+  margin: 0 auto;
+}
+#promo { clear: both; border-top: 3px solid #6E6E6E; background: #505050 url(/themes/ansuz_theme_slick_top_insight/images/footer.gif) no-repeat right top; color: #ccc; padding: 30px 0 0 0; }
 	#promo h2 { color: #fff; }
 	#promo a { color: #D9EAF9; border-bottom: 1px dotted #808080; }
 	.col { float: left; width: 280px; margin: 0 30px 20px 0; }
