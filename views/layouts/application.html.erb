@@ -15,28 +15,31 @@
 	  <%= theme_stylesheet_link_tag 'ansuz_theme_slick_top_insight', 'base' -%>
   </head>
   <body>
-    <div class='wrapper'>
-      <%= render :partial => "page/top_nav" -%>
-      <div id="logo">
-        <h1><a href="/"><span>Insight</span></a></h1>
-		  </div>
-      <%= render :partial => "page/breadcrumb" if (@page && (@page != @root)) -%>
-      <%= @content_for_layout -%>
-      <%= render :partial => "page/child_nav" if (@page && (!@page.children.empty?)) -%>
-      <div id='no-show'>
-        <%= yield :sidebar -%>
+    <div class='complete-wrapper'>
+      <div class='wrapper'>
+        <%= render :partial => "page/top_nav" -%>
+        <div id="logo">
+          <h1><a href="/"><span>Insight</span></a></h1>
+        </div>
+        <%= render :partial => "page/breadcrumb" if (@page && (@page != @root)) -%>
+        <%= @content_for_layout -%>
+        <%= render :partial => "page/child_nav" if (@page && (!@page.children.empty?)) -%>
+        <div id='no-show'>
+          <%= yield :sidebar -%>
+        </div>
+        <div class='clear'> </div>
       </div>
+      <%= render :partial => "page/footer" -%>
+      <script type='text/javascript'>
+        jQuery(document).ready(function() { 
+          // setup scrolling with this one JavaScript call 
+          jQuery("div.scrollable").scrollable({ 
+            // scrolling configuration 
+            horizontal:true,  
+            size:1
+          });  
+        });
+      </script>
     </div>
-    <%= render :partial => "page/footer" -%>
-    <script type='text/javascript'>
-      jQuery(document).ready(function() { 
-        // setup scrolling with this one JavaScript call 
-        jQuery("div.scrollable").scrollable({ 
-          // scrolling configuration 
-          horizontal:true,  
-          size:1
-        });  
-      });
-    </script>
   </body>
 </html>
