@@ -24,6 +24,7 @@ h2 {
   font: normal 1.6em Arial;
   color: #3D3C3B;
   margin: 0 0 15px;
+  text-align: left;
  }
 h2#slogan {
   font-size: 1.3em;
@@ -52,9 +53,9 @@ p  {
 }
 #breadcrumb{
   color:#CCCCCC;
-  left:170px;
+  left:0;
   position:absolute;
-  top:50px;
+  top:54px;
 }
 #top-nav {
   padding: 0 0 8px;
