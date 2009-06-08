@@ -57,6 +57,12 @@ p  {
   position:absolute;
   top:54px;
 }
+#breadcrumb a{
+  color: #fff;
+}
+#breadcrumb a:hover{
+  color: #bbb;
+}
 #top-nav {
   padding: 0 0 8px;
   margin: 30px 0 25px;
