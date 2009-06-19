@@ -280,3 +280,63 @@ p  {
 .video-container{
   padding: 0 30px; 
 }
+.banner-bg{
+  position:absolute; 
+  left: 0; 
+  right: 0; 
+  top: 83px;
+  background: transparent url(/uploads/Image/banner_bg.png) repeat-x top left;
+  height: 185px;
+  z-index:1;
+}
+img.banner{
+  position: relative; 
+  z-index: 200;
+}
+strong{
+  font-weight: 600;
+}
+ul.showy_list{
+  color:#008800;
+  font-size:2em;
+  font-weight:600;
+  margin-top: 5px;
+}
+ul.showy_list li{
+  background: transparent url(/uploads/Image/tick_48.png) no-repeat top left;
+  padding:10px 0 10px 50px;
+  margin: 0;
+}
+.content-div{
+  width:70%;
+  border-right: 1px dashed #ccc;
+  padding-right:20px;
+  margin-bottom: 70px;
+  float:left;
+}
+.side-content-div{
+  width: 25%;
+  float: right;
+}
+.dkblue{
+  color: #008800;
+}
+h2.contact_header{
+background:transparent url(/uploads/Image/contact.png) no-repeat scroll left top;
+color:#444444;
+font-size:2.5em;
+font-weight:600;
+padding:15px 0 15px 70px;
+}
+h3.contact_header{
+color:#444444;
+font-size:2.1em;
+font-weight:600;
+margin: 10px 0;
+}
+a.state{
+  color: #444;
+}
+.content-div .store{
+  margin-bottom: 20px;
+}
