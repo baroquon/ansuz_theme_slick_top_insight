@@ -281,6 +281,13 @@ p  {
   padding: 0 30px; 
 }
 .banner-bg{
+  position:absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 1px;
+}
+.home .banner-bg{
   position:absolute; 
   left: 0; 
   right: 0; 
