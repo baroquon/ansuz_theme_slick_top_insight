@@ -12,13 +12,16 @@
     <link rel="icon"          href="favicon.ico" type="image/vnd.microsoft.icon" />
     <%= manage_ansuz_stylesheets %>
     <%= manage_ansuz_javascripts %>
-	  <%= theme_stylesheet_link_tag 'ansuz_theme_slick_top_insight', 'base' -%>
+    <%= theme_stylesheet_link_tag 'ansuz_theme_slick_top_insight', 'base' -%>
+    <!--[if IE]>
+      <link type="text/css" rel="stylesheet" media="screen" href="/themes/ansuz_theme_slick_top_insight/stylesheets/ie.css" />
+    <![endif]-->
   </head>
   <body id='<%= params[:controller] %>' class='<%= @page.permalinkable_title %>' >
-    <div class='banner-bg'>
-     
-    </div>
     <div class='complete-wrapper'>
+      <div class='banner-bg'>
+       
+      </div>
       <div class='wrapper'>
         <%= render :partial => "page/top_nav" -%>
         <div id="logo">
