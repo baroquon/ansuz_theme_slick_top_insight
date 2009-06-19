@@ -294,6 +294,7 @@ p  {
   background: transparent url(/uploads/Image/banner_bg.png) repeat-x top left;
   height: 185px;
   z-index:1;
+  width: 100%;
 }
 img.banner{
   position: relative; 
